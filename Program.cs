@@ -45,8 +45,7 @@ namespace Tutorial5
             listOfBoxes.Add(box10);
             
             
-             //This is the sort volume function which will be sorting our box list using a linq query for box volume
-             
+            //This is the sort volume function which will be sorting our box list using a linq query for box volume
             static List<Box> SortVolume(List<Box> listOfBoxes)
             {
                 List<Box> boxSorted = new List<Box>(listOfBoxes.OrderBy(s => s.boxVolume()));
@@ -57,9 +56,9 @@ namespace Tutorial5
 
 
             // We are making another list in which we will be adding sorted list of list of boxes and then outputting them using for each function.
-            List<Box> BoxList = SortVolume(listOfBoxes);
+            List<Box> boxList = SortVolume(listOfBoxes);
             Console.WriteLine("Volume of all the boxes in sorted manner so using sort volume function: \n");
-            BoxList.ForEach(Console.WriteLine);
+            boxList.ForEach(Console.WriteLine);
 
 
         }
