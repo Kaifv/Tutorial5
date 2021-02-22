@@ -62,26 +62,26 @@ namespace Tutorial5
         /**
          * A setter for setting up the length of the box
          */
-        public double setLength(double value)
-        {
-            return this.length = value;
+        public void setLength(double value)
+        { 
+            this.length = value;
         }
 
         /**
          * A setter for setting up the width of the box
          */
-        public double setWidth(double value)
-        {
-            return this.width = value;
+        public void setWidth(double value)
+        { 
+            this.width = value;
         }
 
 
         /**
          * A setter for setting up the height of the box
          */
-        public double setHeight (double value)
+        public void setHeight (double value)
         {
-            return this.height = value;
+            this.height = value;
         }
 
         /**

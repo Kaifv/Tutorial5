@@ -49,16 +49,16 @@ namespace Tutorial5
              
             static List<Box> SortVolume(List<Box> listOfBoxes)
             {
-                List<Box> sorted = new List<Box>(listOfBoxes.OrderBy(s => s.boxVolume()));
+                List<Box> boxSorted = new List<Box>(listOfBoxes.OrderBy(s => s.boxVolume()));
 
-                return sorted;
+                return boxSorted;
 
             }
 
 
             // We are making another list in which we will be adding sorted list of list of boxes and then outputting them using for each function.
             List<Box> BoxList = SortVolume(listOfBoxes);
-            Console.WriteLine("Volume of all the boxes in sorted manner so using sortvolume function: \n");
+            Console.WriteLine("Volume of all the boxes in sorted manner so using sort volume function: \n");
             BoxList.ForEach(Console.WriteLine);
 
 
